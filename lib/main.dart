@@ -5,6 +5,7 @@ import 'ui/pages/support_services_page.dart';
 import 'ui/pages/survey/survey_intro_page.dart';
 import 'ui/pages/survey/survey_questions_page.dart';
 import 'ui/pages/survey/perpetrator_page.dart';
+import 'ui/pages/reports_page.dart'; // Ensure this file exists
 
 void main() {
   runApp(SexualReportApp());

@@ -33,6 +33,15 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sqflite_sw.js').then((registration) => {
+        console.log('Sqflite service worker registered!', registration);
+      }).catch((error) => {
+        console.error('Sqflite service worker registration failed:', error);
+      });
+    }
+  </script>  
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
